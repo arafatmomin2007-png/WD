@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Form</title>
+</head>
+<body>
+
+    <h2>Student Form</h2>
+
+    <form>
+        Name: <input type="text" name="name"><br><br>
+
+        Email: <input type="email" name="email"><br><br>
+
+        Gender:
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female<br><br>
+
+        Date of Birth:
+        <input type="date" name="dob"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+
+
+
+Code explanation
+•	<!DOCTYPE html> — tells the browser this is an HTML5 page. 
+•	<html> — root element of the page. 
+•	<head> — contains page information. 
+•	<title> — text shown on the browser tab. 
+•	<body> — visible part of the webpage. 
+Form
+<form>
+Creates a form to take user input.
+Name field
+<input type="text" name="name">
+Creates a normal text box for entering the name.
+Email field
+<input type="email" name="email">
+Creates an email input box.
+Gender field
+<input type="radio" name="gender">
+Creates radio buttons.
+Both buttons have the same name, so only one option can be selected.
+Date of birth
+<input type="date" name="dob">
+Creates a date picker.
+Submit button
+<input type="submit" value="Submit">
+Creates a submit button.
+________________________________________
+Short viva explanation
+If teacher says “Explain your program,” you can say:
+“This program creates a simple HTML form. It takes name, email, gender, and date of birth from the user. The submit button sends the entered data.”
+________________________________________
+Common viva questions
+1. What is HTML?
+HTML stands for HyperText Markup Language.
+2. Which tag is used to create a form?
+<form>
+3. Which input type is used for name?
+type="text"
+4. Which input type is used for email?
+type="email"
+5. Why is type="email" used?
+It accepts email format input.
+6. Which input type is used for gender?
+type="radio"
+7. Why do both radio buttons have the same name?
+So only one option can be selected.
+8. Which input type is used for date of birth?
+type="date"
+9. Which input type creates the submit button?
+type="submit"
+________________________________________
+One likely viva question
+What is the use of the name attribute?
+Say:
+“The name attribute identifies the input field when form data is submitted.”
+
