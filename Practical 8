@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+
+    <script>
+        function calculate() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var op = document.getElementById("operation").value;
+            var result;
+
+            switch(op) {
+                case "+":
+                    result = add(num1, num2);
+                    break;
+
+                case "-":
+                    result = subtract(num1, num2);
+                    break;
+
+                case "*":
+                    result = multiply(num1, num2);
+                    break;
+
+                case "/":
+                    result = divide(num1, num2);
+                    break;
+
+                default:
+                    result = "Invalid Operation";
+            }
+
+            document.getElementById("answer").innerHTML = "Result: " + result;
+        }
+
+        function add(a, b) {
+            return a + b;
+        }
+
+        function subtract(a, b) {
+            return a - b;
+        }
+
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        function divide(a, b) {
+            return a / b;
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Simple Calculator</h2>
+
+    Number 1: <input type="number" id="num1"><br><br>
+
+    Number 2: <input type="number" id="num2"><br><br>
+
+    Operation:
+    <select id="operation">
+        <option value="+">Addition</option>
+        <option value="-">Subtraction</option>
+        <option value="*">Multiplication</option>
+        <option value="/">Division</option>
+    </select><br><br>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <p id="answer"></p>
+
+</body>
+</html>
+
+
+Code explanation
+Input values
+document.getElementById("num1").value
+Gets the values entered by the user.
+parseFloat()
+Converts input from text into number.
+Switch case
+switch(op)
+Checks which operation is selected.
+Functions
+function add(a, b)
+Separate functions are used for addition, subtraction, multiplication, and division.
+Display result
+document.getElementById("answer").innerHTML
+Shows the result on the webpage.
+________________________________________
+Short viva explanation
+If teacher says “Explain your program,” you can say:
+“This program is a simple calculator using JavaScript. It takes two numbers and one operation from the user. A switch case checks the selected operation, calls the related function, and displays the result using DOM.”
+________________________________________
+Common viva questions
+1. What is JavaScript?
+JavaScript is a scripting language used to make web pages interactive.
+2. Why is parseFloat() used?
+It converts input into numbers.
+3. What is switch used for?
+It selects one block of code from multiple choices.
+4. Why are functions used?
+Functions make code simple, reusable, and organized.
+5. What does getElementById() do?
+It selects an HTML element by id.
+6. What does innerHTML do?
+It changes or displays content inside an HTML element.
+________________________________________
+Very likely practical viva question
+Why did you use switch case instead of many if-else statements?
+Say:
+“Switch case makes the code simpler and easier to read when there are multiple operations.”
+
