@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Example</title>
+    <script>
+        function showMessage() {
+            document.getElementById("demo").innerHTML = "Welcome to  
+JavaScript DOM!";
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Dynamic Content using DOM</h2>
+
+    <button onclick="showMessage()">Click Here</button>
+
+    <p id="demo"></p>
+
+</body>
+</html>
+ 
+Simple code explanation
+Function
+function showMessage()
+This function runs when the button is clicked.
+DOM selection
+document.getElementById("demo")
+This selects the paragraph whose id is demo.
+Dynamic content
+innerHTML = "Welcome to JavaScript DOM!";
+This changes the content of the paragraph dynamically.
+Button
+<button onclick="showMessage()">
+When the button is clicked, the function runs.
+________________________________________
+Short viva explanation
+If teacher says “Explain your program,” you can say:
+“This program uses JavaScript DOM to change webpage content dynamically. When the button is clicked, JavaScript selects the paragraph by id and displays a message.”
+________________________________________
+Common viva questions
+1. What is DOM?
+DOM stands for Document Object Model.
+2. What does DOM do?
+It allows JavaScript to access and change HTML elements.
+3. What does getElementById() do?
+It selects an HTML element using its id.
+4. What is innerHTML?
+It is used to change the content inside an HTML element.
+5. What does onclick do?
+It runs JavaScript code when the button is clicked.
+________________________________________
+Very likely viva question
+What is dynamic content?
+Say:
+“Dynamic content means webpage content changes without rewriting the whole page.”
+
