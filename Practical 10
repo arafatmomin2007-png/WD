@@ -1,0 +1,51 @@
+<?php
+$str = "Hello World";
+
+echo "<h2>String Manipulation</h2>";
+
+echo "Original String: " . $str . "<br>";
+
+echo "Length of String: " . strlen($str) . "<br>";
+
+echo "Reverse String: " . strrev($str) . "<br>";
+
+echo "Substring: " . substr($str, 0, 5) . "<br>";
+?>
+ 
+Code explanation
+String variable
+$str = "Hello World";
+Stores the string in a variable.
+Length
+strlen($str)
+Returns the number of characters.
+Reverse
+strrev($str)
+Reverses the string.
+Substring
+substr($str, 0, 5)
+Takes part of the string.
+•	0 = starting position 
+•	5 = number of characters 
+________________________________________
+Short viva explanation
+If teacher says “Explain your program,” you can say:
+“This PHP program performs string manipulation. It displays the original string, finds its length, reverses it, and extracts a substring.”
+________________________________________
+Common viva questions
+1. What is a string?
+A string is a sequence of characters.
+2. Which function finds string length?
+strlen()
+3. Which function reverses a string?
+strrev()
+4. Which function extracts part of a string?
+substr()
+5. What does substr($str, 0, 5) mean?
+It takes 5 characters starting from position 0.
+________________________________________
+Very likely practical viva question
+How many characters are in "Hello World"?
+Answer:
+11 characters (including the space).
+
