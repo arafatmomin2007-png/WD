@@ -1,0 +1,51 @@
+<?php
+// Display welcome message
+echo "<h2>Welcome to My Web Page!</h2>";
+// Set timezone (important)
+date_default_timezone_set("Asia/Kolkata");
+// Display current date and time
+echo "<p>Current Date & Time: " . date("d-m-Y H:i:s") . "</p>";
+?> 
+ 
+PHP opening and closing tags
+<?php  ?>
+Everything inside these tags is PHP code.
+Display welcome message
+echo "Welcome to PHP Programming";
+echo is used to display output on the webpage.
+Set timezone
+date_default_timezone_set("Asia/Kolkata");
+Sets the time according to India.
+Display current date and time
+date("d-m-Y h:i:s A");
+•	d = day 
+•	m = month 
+•	Y = year 
+•	h = hour 
+•	i = minutes 
+•	s = seconds 
+•	A = AM/PM 
+________________________________________
+Short viva explanation
+If teacher says “Explain your program,” you can say:
+“This PHP program displays a welcome message and the current date and time. echo prints the message, and the date() function shows the current date and time.”
+________________________________________
+Common viva questions
+1. What is PHP?
+PHP stands for Hypertext Preprocessor. It is a server-side scripting language.
+2. Which tags are used in PHP?
+<?php and ?>
+3. What does echo do?
+It displays output.
+4. Which function shows date and time?
+date()
+5. Why is date_default_timezone_set() used?
+It sets the correct timezone.
+6. Why should the file be saved as .php?
+Because PHP code runs only in a PHP file.
+________________________________________
+Very likely practical viva question
+Will this run by directly opening in browser?
+Say:
+“No, PHP needs a server like XAMPP or WAMP to run.”
+
