@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+
+            if (name == "" || email == "") {
+                alert("All fields are required");
+                return false;
+            }
+
+            if (email.indexOf("@") == -1 || email.indexOf(".") == -1) {
+                alert("Enter valid email");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Simple Form Validation</h2>
+
+    <form onsubmit="return validateForm()">
+        Name: <input type="text" id="name"><br><br>
+        Email: <input type="text" id="email"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+ 
+Code explanation
+JavaScript function
+function validateForm()
+This function runs when the form is submitted.
+Getting input values
+document.getElementById("name").value
+This gets the value entered in the input box.
+Empty field check
+if (name == "" || email == "")
+Checks whether the name or email field is empty.
+Email check
+if (email.indexOf("@") == -1 || email.indexOf(".") == -1)
+Checks whether the email contains @ and .
+Alert box
+alert("All fields are required");
+Shows a message if validation fails.
+Prevent form submission
+return false;
+Stops the form from submitting if data is invalid.
+Form event
+<form onsubmit="return validateForm()">
+When the user clicks submit, the validation function runs first.
+________________________________________
+Short viva explanation
+If teacher says “Explain your program,” you can say:
+“This program validates form input using JavaScript. It checks whether fields are empty and whether the email is valid. If input is wrong, an alert message is shown and form submission stops.”
+________________________________________
+Common viva questions
+1. What is JavaScript?
+JavaScript is a scripting language used to make web pages interactive.
+2. Why is form validation used?
+To check whether the user enters valid data.
+3. What does getElementById() do?
+It selects an HTML element by its id.
+4. What does .value do?
+It gets the value entered by the user.
+5. Why is return false used?
+It stops the form submission.
+6. What does alert() do?
+It displays a popup message.
+7. Why is onsubmit used?
+It runs validation when the form is submitted.
+8. What does indexOf() do?
+It checks whether a character exists inside a string.
+________________________________________
+Very likely practical viva question
+How are you validating email here?
+Say:
+“I am checking whether the email contains @ and . using JavaScript.”
+
