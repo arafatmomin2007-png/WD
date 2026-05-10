@@ -1,0 +1,110 @@
+Use 2 files for this practical, because external CSS needs a separate file.
+1) HTML file (index.html)
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Example</title>
+
+    <!-- Internal CSS -->
+    <style>
+        h2 {
+            color: blue;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Inline CSS -->
+    <h1 style="color:red;">Student Details</h1>
+
+    <h2>Using Internal, External and Inline CSS</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>Arafat</td>
+            <td>Sangli</td>
+        </tr>
+        <tr>
+            <td>Rahul</td>
+            <td>Pune</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
+
+2) External CSS file (style.css)
+
+body {
+    background-color: lightgray;
+    font-family: Arial;
+}
+
+
+ 
+Code explanation
+External CSS
+body {
+    background-color: lightgray;
+    font-family: Arial;
+}
+This is written in a separate file.
+It changes the page background and font.
+Internal CSS
+<style>
+CSS written inside the HTML file, inside the <head> section.
+It styles:
+•	h2 heading color 
+•	table borders 
+•	padding inside table cells 
+Inline CSS
+<h1 style="color:red;">
+CSS written directly inside an HTML tag.
+________________________________________
+Short viva explanation
+If teacher says “Explain your program,” you can say:
+“This web page uses all three types of CSS. Inline CSS styles the first heading, internal CSS styles the second heading and table, and external CSS changes the page background and font.”
+________________________________________
+Common viva questions
+1. What is CSS?
+CSS stands for Cascading Style Sheets. It is used to style web pages.
+2. How many types of CSS are there?
+Three types:
+•	Inline CSS 
+•	Internal CSS 
+•	External CSS 
+3. What is inline CSS?
+CSS written directly inside an HTML tag.
+4. What is internal CSS?
+CSS written inside the <style> tag in the HTML file.
+5. What is external CSS?
+CSS written in a separate .css file.
+6. Which tag links external CSS?
+<link>
+7. Why should both files be in the same folder?
+So the HTML file can find the CSS file.
+8. What does border-collapse: collapse; do?
+It joins table borders into a single border.
+________________________________________
+Very likely practical question
+Which CSS has highest priority?
+Answer:
+Inline CSS has the highest priority.
+
