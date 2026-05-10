@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image, Hyperlink and Nested Table</title>
+</head>
+<body>
+
+    <h1>My Web Page</h1>
+
+    <img src="photo.jpg" alt="My Image" width="150">
+
+    <p>
+        Visit 
+        <a href="https://www.google.com">Google</a>
+    </p>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Details</th>
+        </tr>
+
+        <tr>
+            <td>Arafat</td>
+            <td>
+                <table border="1">
+                    <tr>
+                        <th>Age</th>
+                        <th>City</th>
+                    </tr>
+                    <tr>
+                        <td>18</td>
+                        <td>Sangli</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
+ 
+Simple code explanation
+•	<!DOCTYPE html> — tells the browser this is an HTML5 page. 
+•	<head> — contains page information. 
+•	<title> — shows the title on the browser tab. 
+•	<body> — visible content of the page. 
+Image
+<img src="..." alt="Sample Image">
+•	img displays an image. 
+•	src gives the image location. 
+•	alt shows alternate text if image does not load. 
+Hyperlink
+<a href="https://www.google.com">Google</a>
+•	a creates a link. 
+•	href contains the destination URL. 
+Table
+<table border="1">
+•	creates a table. 
+•	tr = table row 
+•	th = table heading 
+•	td = table data 
+Nested table
+A table inside another table is called a nested table.
+Here, the second table is placed inside the Details column.
+________________________________________
+Very short viva explanation
+If teacher says “Explain your program,” you can say:
+“This program creates a web page containing an image, a hyperlink, and a nested table. The image is displayed using the img tag, the hyperlink is created using the a tag, and a table is placed inside another table to demonstrate a nested table.”
+________________________________________
+Common viva questions
+1. What is HTML?
+HTML stands for HyperText Markup Language.
+2. Which tag is used to display an image?
+<img>
+3. What is the use of src in image tag?
+It specifies the path of the image.
+4. What is the use of alt?
+It displays alternate text if the image does not load.
+5. Which tag is used to create a hyperlink?
+<a>
+6. What is href?
+It specifies the link destination.
+7. What is a nested table?
+A table inside another table.
+8. What is the difference between th and td?
+•	th = heading cell 
+•	td = normal data cell 
+________________________________________
+One likely practical viva question
+Why did you use nested table?
+Say:
+“Nested table is used to organize related data inside a table cell.”
+
