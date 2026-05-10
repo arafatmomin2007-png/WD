@@ -11,7 +11,11 @@ echo "Reverse String: " . strrev($str) . "<br>";
 
 echo "Substring: " . substr($str, 0, 5) . "<br>";
 ?>
- 
+
+
+
+
+
 Code explanation
 String variable
 $str = "Hello World";
