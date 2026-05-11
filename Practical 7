@@ -4,8 +4,7 @@
     <title>DOM Example</title>
     <script>
         function showMessage() {
-            document.getElementById("demo").innerHTML = "Welcome to  
-JavaScript DOM!";
+            document.getElementById("demo").innerHTML = "Welcome to JavaScript DOM!";
         }
     </script>
 </head>
